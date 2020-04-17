@@ -25,4 +25,9 @@ sqlite
 
 ### ps
 
-颜色总数超过 50000
+其他插件
+
+- [音乐播放器](https://yuanliao.info/d/1321) (短期不会更新)已经上架插件中心
+- [短地址转换](https://yuanliao.info/d/1360) 已经上架插件中心
+- [文件加密](https://yuanliao.info/d/1369) 已经上架插件中心
+- [图片编辑](https://yuanliao.info/d/1381)已经上架插件中心
