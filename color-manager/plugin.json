@@ -1,0 +1,16 @@
+{
+  "pluginName": "颜色管理器",
+  "description": "颜色管理器",
+  "version": "0.0.2",
+  "main": "vue/index.html",
+  "author": "xiaou",
+  "preload": "preload.js",
+  "logo": "logo.png",
+  "features": [
+    {
+      "code": "颜色管理器",
+      "explain": "颜色管理器",
+      "cmds": ["颜色管理器", "cm", "color-manager"]
+    }
+  ]
+}
