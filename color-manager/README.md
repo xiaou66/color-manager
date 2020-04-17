@@ -1,5 +1,3 @@
-## 颜色管理
-
 [插件发布地址](https://yuanliao.info/d/1434)
 [源码地址](https://github.com/xiaou66/color-manager) 点个 star 咯
 
