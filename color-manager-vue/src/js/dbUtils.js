@@ -8,7 +8,7 @@ export default () => {
       locateFile: file => 'https://cdn.staticfile.org/sql.js/1.2.2/dist/sql-wasm.wasm'
     }).then(SQL => {
       // eslint-disable-next-line no-undef
-      const filebuffer = window.fs.readFileSync(`${utools.getPath('userData')}/databases/colors.db`)
+      const filebuffer = window.fs.readFileSync(`${utools.getPath('userData')}/database/colors.db`)
       const db = new SQL.Database(filebuffer)
       resolve(db)
     }).catch(err => {

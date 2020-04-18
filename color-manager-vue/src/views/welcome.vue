@@ -34,7 +34,7 @@ export default {
           this.show = true
           const readStream = window.fs.createReadStream(res[0])
           // eslint-disable-next-line no-undef
-          const writeStream = window.fs.createWriteStream(`${utools.getPath('userData')}/databases/colors.db`)
+          const writeStream = window.fs.createWriteStream(`${utools.getPath('userData')}/database/colors.db`)
           // 监听 读完文件的事件
           readStream.on('end', () => {
             writeStream.end()
@@ -54,7 +54,7 @@ export default {
             const buffer = window.toBuffer(arrayBuffer)
             console.log(buffer)
             // eslint-disable-next-line no-undef
-            window.fs.writeFile(`${utools.getPath('userData')}/databases/colors.db`, buffer, (err) => {
+            window.fs.writeFile(`${utools.getPath('userData')}/database/colors.db`, buffer, (err) => {
               if (err) throw err
               this.$refs.load.done()
             })

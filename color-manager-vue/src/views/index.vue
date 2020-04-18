@@ -81,7 +81,7 @@ export default {
       // 判断数据文件是否存在
       // eslint-disable-next-line no-undef
       // eslint-disable-next-line no-undef
-      window.fs.exists(`${utools.getPath('userData')}/databases/colors.db`, (exists) => {
+      window.fs.exists(`${utools.getPath('userData')}/database/colors.db`, (exists) => {
         console.log(exists)
         if (exists) {
           // 存在
