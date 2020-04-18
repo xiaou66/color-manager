@@ -8,7 +8,7 @@
     <a-row  type="flex" justify="start">
       <a-col v-for="(id, index) in project.projectIndex" :key="index">
         <a-card :title="project.projects[id].name" class="project_item">
-          <span href="#" slot="extra">
+          <span  slot="extra">
               <a-icon type="appstore" @click="openProjectHandler(id)"/>
               <a-icon style="padding-left: 5px;" type="delete" @click="deleteProjectHandler(id)"/>
           </span>

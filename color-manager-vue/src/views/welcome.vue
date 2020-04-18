@@ -35,8 +35,12 @@ export default {
           const readStream = window.fs.createReadStream(res[0])
           // eslint-disable-next-line no-undef
           const writeStream = window.fs.createWriteStream(`${utools.getPath('userData')}/databases/colors.db`)
+          // 监听 读完文件的事件
+          readStream.on('end', () => {
+            writeStream.end()
+            this.$refs.load.done()
+          })
           readStream.pipe(writeStream)
-          this.$router.push({ name: 'colourSpectrum' })
         } else {
           this.$message.info('未选择文件')
         }

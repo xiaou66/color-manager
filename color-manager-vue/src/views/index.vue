@@ -86,6 +86,7 @@ export default {
         if (exists) {
           // 存在
           // 初始化数据库连接
+          console.log(1)
           fetch('https://xiaou520.github.io/colors/version.txt').then(res => res.text())
             .then(v => {
               getDb().then(db => {
