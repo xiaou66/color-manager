@@ -9,7 +9,7 @@
           <span  slot="extra">
             <a-icon type="search" @click="colorSeeHandler(item.hex)" />
             <a-icon type="copy" style="padding-left: 8px;" @click="copy(`rgb(${item.RGB[0]},${item.RGB[1]},${item.RGB[2]})`)"/>
-            <a-icon style="padding-left: 8px;" type="plus" @click="colorAddHandler(item)"/>
+<!--            <a-icon style="padding-left: 8px;" type="plus" @click="colorAddHandler(item)"/>-->
           </span>
           <div class="user">
             <a-tooltip>
@@ -32,7 +32,8 @@
       <a-button type="primary" @click="nextPage">下一页</a-button>
     </a-row>
     <!-- 颜色预览 -->
-    <a-modal v-model="colorSee.visible" :bodyStyle="{'background':`${colorSee.currentColor}`,'height':'300px'}" :footer="null">
+    <a-modal   v-model="colorSee.visible" :bodyStyle="{'background':`${colorSee.currentColor}`,'height':'300px'}" :footer="null">
+      <div class="copy" @click="copy(colorSee.currentColor)"></div>
     </a-modal>
     <!-- 添加框 -->
     <a-drawer
@@ -143,5 +144,12 @@ export default {
 }
 .tip {
   background: #fff;
+}
+.copy {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 </style>

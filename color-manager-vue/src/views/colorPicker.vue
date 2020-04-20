@@ -10,7 +10,7 @@
          <span slot="extra">
            <a-icon type="search" @click="colorSeeHandler(item.color)"/>
            <a-icon type="copy" style="padding-left: 8px;" @click="copy(item.color)"/>
-           <a-icon type="plus" style="padding-left: 8px;"/>
+<!--           <a-icon type="plus" style="padding-left: 8px;"/>-->
          </span>
          <div class="w-box" :style="`background: ${item.color};`"></div>
        </a-card>

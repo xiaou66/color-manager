@@ -49,7 +49,7 @@
           <a-menu-item key="setting">
             <a-icon type="setting" />
             <span>设置</span>
-          </a-menu-item>
+          </a-menu-item>-->
         </a-menu>
       </a-layout-sider>
       <!-- 内容 -->

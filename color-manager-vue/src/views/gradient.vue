@@ -11,7 +11,7 @@
           <span  slot="extra">
               <a-icon type="search" @click="colorSeeHandler(item.style)" />
               <a-icon type="copy" style="padding-left: 8px;" @click="copy(item.style)"/>
-              <a-icon style="padding-left: 8px;" type="plus" />
+<!--              <a-icon style="padding-left: 8px;" type="plus" />-->
           </span>
           <div class="w_box"  :style="item.style" ></div>
         </a-card>
@@ -21,7 +21,7 @@
       <a-pagination :defaultPageSize="51" :total="total" @change="dbGetData"/>
     </div>
     <a-modal v-model="colorSee.visible"  :bodyStyle="{'height':'300px','padding':'0'}" :footer="null" >
-      <div :style="`${colorSee.currentColor}height:100%`"></div>
+      <div :style="`${colorSee.currentColor}height:100%`" @click="copy(colorSee.currentColor)"></div>
     </a-modal>
   </div>
 </template>

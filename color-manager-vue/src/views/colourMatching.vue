@@ -17,8 +17,8 @@
       <a-pagination :defaultPageSize="51" :total="total" @change="dbGetData"/>
     </div>
     <a-modal v-model="colorSee.visible"  :bodyStyle="{'height':'300px','padding':'0'}" :footer="null" >
-      <div class="item" :key="index" v-for="(item, index) in colorSee.currentColor" :style="`background: ${item};border-radius: 0;height:75px`" >
-        <span class="tip" @click="copy(item)">{{item}}</span>
+      <div class="item" :key="index" v-for="(item, index) in colorSee.currentColor" :style="`background: ${item};border-radius: 0;height:75px`" @click="copy(item)">
+        <span class="tip">{{item}}</span>
       </div>
     </a-modal>
   </div>

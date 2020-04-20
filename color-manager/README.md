@@ -3,6 +3,10 @@
 [插件发布地址](https://yuanliao.info/d/1434) <br/>
 [源码地址](https://github.com/xiaou66/color-manager) 点个 star 咯
 
+### 0.0.5
+
+优化颜色复制
+
 ### 主要提供颜色库
 
 - 单色
